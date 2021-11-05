@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario_Completo</title>
+    <style>
+    
+        table{
+            background-color: #00CCFF;
+        }
+        th{
+            background-color:lightyellow;
+            color: red;
+            border: solid red 2px;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <form method="POST" action="http://formadorestic.com/alumnosasir2/procesaformulario_usuario.php">
+    
+        <table border="3">
+            <tr>
+                <th colspan="2"><center>User Form</center></th>
+            </tr>
+
+            <tr>
+
+                <td><label for="nom">Enter Name</label></td>
+                <td><input type="text" name="nombre" id="nom"></td>
+
+            </tr>
+
+            <tr>
+                <td><label for="pass">Enter Password</label></td>
+                <td><input type="password" name="contraseña" id="pass"></td>
+            </tr>
+            <tr>
+                <td><label for="dir">Enter Address</label></td>
+                <td><textarea name="direccion" id="dir" cols="30" rows="10"></textarea></td>
+            </tr>
+            <tr>
+
+                <td>Select Game</td>
+                <td>
+
+                    <input type="checkbox" name="hockey" id="hock">
+                    <label for="hock">Hockey</label>
+                    <br>
+                    <input type="checkbox" name="Football" id="foot">
+                    <label for="foot">Football</label>
+                    <br>
+                    <input type="checkbox" name="badminton" id="badm">
+                    <label for="badm">Badminton</label>
+                    <br>
+                    <input type="checkbox" name="Cricket" id="cric">
+                    <label for="cric">Cricket</label>
+                    <br>
+                    <input type="checkbox" name="volleyball" id="voll">
+                     <label for="voll">Volleyball</label>
+                </td>
+        
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <input type="radio" name="sexo" value="male" id="hom" checked>
+                    <label for="hom">Male</label>
+                    <input type="radio" name="sexo" value="female" id="muj">
+                    <label for="muj">Female</label>
+                </td>
+        
+            </tr>
+            <tr>
+                <td>Select ur age</td>
+                <td>
+            
+                    <select name="edad" id="años">
+
+                        <option value="none">select</option>
+                        <option value="18">18</option>
+			            <option value="19">19</option>
+			            <option value="20">20</option>
+                        <option value="21">21</option>
+			            <option value="22">22</option>
+			            <option value="23">23</option>
+        
+                    </select>
+            
+                </td>
+            </tr>
+             <tr>
+                <td colspan="2"><input type="file" name="examinar" id=""></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="button" name="click" value="Click Me">
+                    <input type="reset" name="rest" value="Restablecer">
+                     <input type="submit" name="enviar" value="Submit Form">
+            
+                </td>
+        
+            </tr>
+
+
+
+
+        </table>
+     </form>
+    
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
